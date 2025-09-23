@@ -1,0 +1,151 @@
+:root{
+      --muted:#bdbdbd;
+    }
+    html,body{
+        height:100%;
+    }
+    body{
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        background-image:
+      radial-gradient(circle at 1% 52%, rgba(139, 139, 139,0.05) 0%, rgba(139, 139, 139,0.05) 50%,rgba(21, 21, 21,0.05) 50%, rgba(21, 21, 21,0.05) 100%),
+      radial-gradient(circle at 41% 28%, rgba(81, 81, 81,0.05) 0%, rgba(81, 81, 81,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),
+      radial-gradient(circle at 48% 1%, rgba(93, 93, 93,0.05) 0%, rgba(93, 93, 93,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),
+      linear-gradient(255deg, rgb(25, 10, 50), rgb(5, 5, 15)); /* lebih gelap */
+      margin:0;
+      font-family:Inter, Arial, sans-serif;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:2rem;
+    }
+    .app{
+      width:1500px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius:12px;
+      padding:1.25rem;
+      box-shadow:0 8px 32px rgba(0,0,0,0.6);
+    }
+    h1,h2{
+        color:#fff;
+        margin:0;
+        text-align:center
+    }
+    h2{
+        font-weight:400;
+        margin-bottom:8px
+    }
+    .controls{
+        display:flex;
+        flex-wrap:wrap;
+        gap:12px;
+        justify-content:center;
+        margin-top:12px
+    }
+    .control{
+        min-width:150px
+    }
+    label{
+        display:block;
+        font-size:13px;
+        color:var(--muted);
+        margin-bottom:6px
+    }
+    select,input[type=range]{
+        width:100%;
+        padding:6px;
+        border-radius:6px;
+        border:1px solid #333;
+        background:#121212;
+        color:var(--muted)
+    }
+    .btns{
+        display:flex;
+        gap:10px;
+        justify-content:center;
+        margin-top:12px
+    }
+    button{
+        background:#234; 
+        border:none;
+        color:#fff;
+        padding:8px 14px;
+        border-radius:8px;
+        cursor:pointer
+    }
+    button:hover{
+        filter:brightness(1.15)
+    }
+
+    .visuals {
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    canvas{
+        display:block;
+        border-radius:8px
+    }
+
+    .explanation{
+      margin-top:14px;
+background: rgba(0, 0, 0, 0.4);
+      border-radius:8px;
+      padding:14px;
+      color:#ddd;
+      font-size:14px;
+      line-height:1.5;
+      font-size: 20px;
+    font-weight: 500;  
+  color: #eee;
+    }
+    .explanation h3{
+        color:#fff;
+        margin-top:0
+    }
+    .code{background:#0b0b0b;
+        padding:8px;
+        border-radius:6px;
+        margin:8px 0;
+        font-family:monospace;
+        font-size:13px;
+        color:#9fe8c7
+    }
+    .note{
+        font-size:13px;
+        color:#bdbdbd;
+        margin-top:10px
+    }
+    ul{
+        margin:8px 0 8px 1.1rem
+    }
+    .example{
+        background:#0b1a1a;
+        padding:8px;
+        border-radius:6px;
+        color:#cfeefc
+    }
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
+  text-align: center;
+  z-index: 1000;
+  background: #222;
+  border-top: 1px solid #444;
+}
+
+footer a {
+  color: #ccc;         
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #fff;         
+}
